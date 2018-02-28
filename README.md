@@ -19,12 +19,8 @@ coinone API 를 이용하여 각종 서비스를 제공해주는 API Service(jso
 
 - gateway : 외부 api등의 Gateway 모듈
 	- cointone/ : cointone gateway
-		- client : gateway 통신 모듈
-			-  `validate_helpers.py` : 유효성 검사 유틸
-			-  `cache_manager.py` : 캐시 관리
-			-  `mssql_field.py` : MS-SQL용 필드
-			-  `redisutil.py` : redis cache 커스텀 설정
-			-  `timeutil.py` : 시간 관련
+		- `client.py`: coineone api gateway 모듈
+			
 - utils : 각종 유틸리티 모듈
     - mail/ : mail 관련
        - `mail.py` : mail 발송 관련 
