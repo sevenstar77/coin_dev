@@ -12,8 +12,8 @@ app.autodiscover_tasks()
 
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
-    sender.add_periodic_task(30.0, send_schedules_email.s('send_schedules_email'), name='send_schedules_email')
-    #sender.add_periodic_task(20.0, auto_trading_schedules.s('auto_trading_schedules'), name='auto_trading_schedules')
+    sender.add_periodic_task(300.0, send_schedules_email.s('send_schedules_email'), name='send_schedules_email')
+    sender.add_periodic_task(200.0, auto_trading_schedules.s('auto_trading_schedules'), name='auto_trading_schedules')
 
 @app.task
 def auto_trading_schedules(args):

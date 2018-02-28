@@ -78,7 +78,7 @@ coinone API 를 이용하여 각종 서비스를 제공해주는 API Service(jso
  - http://127.0.0.1:8000/api/v1.0/schedules/schedule : 자동 메일 스케쥴 api
  
 ## 
-  - 스케쥴 task(celery) : broker : redis  를 이용한  처리
+  - 스케쥴 task(celery) : broker 는 redis 를 이용한  처리
 
 ###TO-DO LIST 
   - test code 작성 : TDD로 개발 하고 싶었으나 다른 사정등으로 인하여 못함, 자동화 및 안정성을 위하여 작성할것
