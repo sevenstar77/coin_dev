@@ -1,0 +1,18 @@
+//http://127.0.0.1:8000/api/v1.0/schedules/emailschedules
+
+/*GET*/
+//http://127.0.0.1:8000/api/v1.0/schedules/emailschedules // 모든 스케쥴 정보를 가져온다.
+//http://127.0.0.1:8000/api/v1.0/schedules/emailschedules?userno=1 //해당 유저의 모든 스케쥴 정보를 가져온다.
+
+
+/*POST*/
+{
+	"user_no": 1,
+	"name" : "tester",                          // 이름
+	"email" : "amazoneprimeday@gmail.com",      // 받을 메일주소
+	"is_email_receive" : "true",                // 메일 수신여부
+	"schedule_type" : "STT01",                  // STT01 : '예약 메일'
+	"currency" : "ltc",                         // 가상화폐 정류
+	"from_date" : "2018-02-26T00:00:00",        // 적용 시작일
+    "to_date" : "2018-02-27T00:00:00"           // 적용 종료일
+}

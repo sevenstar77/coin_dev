@@ -1,0 +1,16 @@
+/*POST*/
+{
+    "usero": 1,                                   //유저정보
+	"name" : "tester1",                           //유저이름
+	"email" : "amazoneprimeday@gmail.com",        //이메일
+	"is_email_receive" : "true",                  //이메일수신여부
+	"schedule_type" : "STT01",                    //STT01 :: 현재가격 정보 발송 STT02 :: 목표가 도달시 발송 STT03 :: 목표 퍼센테이지시 발송
+	"currency" : "ltc",                           //화폐종료
+    "price" : 0.00,                               // 가격
+    "targetupprice": 0.00,                        //목표상 가
+    "targetdownprice": 0.00,                      //목표하 가
+    "targetuppercent": 10,                        //수익률 지정
+    "targetdownpercent": -5,                      //손실률 지정
+    "from_date" : "2018-02-26T00:00:00",          //적용기간시작일
+	"to_date" : "2018-03-10T00:00:00",            //적용기간마감일
+}
